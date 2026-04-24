@@ -10,18 +10,18 @@ function Navbar() {
     const saved = localStorage.getItem('theme');
     if (saved === 'dark') {
       setIsDark(true);
-      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
     } else {
       setIsDark(false);
-      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
     }
   }, []);
 
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
     }
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   }, [isDark]);

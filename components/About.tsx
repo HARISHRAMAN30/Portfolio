@@ -43,7 +43,7 @@ export default function About() {
             <div className="about-stats">
               <StatCard target={72} suffix="+" label="Live Client Orgs" />
               <StatCard target={3} suffix="" label="Production Apps" />
-              <StatCard target={2} suffix="+" label="Years Experience" />
+              <StatCard target={1} suffix="+" label="Years Experience" />
               <StatCard target={740} suffix="" label="LinkedIn Connections" />
             </div>
           </div>
